@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Laterpay — Campus Peer Lending & Ledger</title>
+<meta name="description" content="Laterpay is an informal, zero-interest ledger app that lets students lend and borrow within their own campus community.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/jpeg" href="assets/images/laterpay-logo.jpeg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/laterpay.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-fluid fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="assets/images/laterpay-logo.jpeg" alt="Laterpay logo" class="lp-logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lpNav" aria-controls="lpNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="lpNav">
+      <ul class="navbar-nav mx-auto py-2 py-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#how-it-works">How it works</a></li>
+        <li class="nav-item"><a class="nav-link" href="#security">Security</a></li>
+        <li class="nav-item"><a class="nav-link" href="#market">Market</a></li>
+        <li class="nav-item"><a class="nav-link" href="#revenue">Revenue</a></li>
+        <li class="nav-item"><a class="nav-link" href="#team">Team &amp; Roadmap</a></li>
+        <li class="nav-item"><a class="nav-link" href="community.html">WhatsApp Community</a></li>
+      </ul>
+      <a href="https://forms.gle/BHJaEvY9FjxCz2sE6" target="_blank" rel="noopener" class="btn btn-accent">Join the Waitlist</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero-fluid" style="padding-top:9rem;">
+  <div class="container position-relative">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <span class="eyebrow eyebrow-light">Campus Peer Lending &amp; Ledger</span>
+        <h1>Students borrow slow, invest never. <span class="lp-gradient-text">Laterpay fixes that.</span></h1>
+        <p class="lead">An informal, zero-interest ledger app — students lend and borrow within their own institution. No instant loans for emergencies, no place for idle cash to help a classmate. Laterpay turns your campus into a trusted lending circle.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="https://forms.gle/BHJaEvY9FjxCz2sE6" target="_blank" rel="noopener" class="btn btn-accent btn-lg">Join the Waitlist</a>
+          <a href="community.html" class="btn btn-outline-light-fluid btn-lg"><i class="bi bi-whatsapp me-2"></i>Join WhatsApp Community</a>
+        </div>
+        <p class="mt-4 mb-0" style="color: rgba(255,255,255,.5); font-size:.85rem;">Non-custodial &middot; Zero interest &middot; Student-ID verified &middot; Built by students, for students</p>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-visual">
+          <div class="lp-app-mock hero-main-img" style="width:100%;">
+            <div class="lp-mock-header">
+              <span><span class="lp-dot"></span>Laterpay Feed</span>
+              <i class="bi bi-three-dots" style="color:rgba(255,255,255,.4);"></i>
+            </div>
+            <div class="lp-feed-card">
+              <div class="lp-feed-top">
+                <div class="lp-feed-name"><span class="lp-avatar-mini">R</span>Riya, 3rd yr</div>
+                <span class="lp-feed-tag">Open</span>
+              </div>
+              <p>"Short ₹300 for fest tickets, payback by Friday 🙏"</p>
+              <button class="lp-help-btn">Help out</button>
+            </div>
+            <div class="lp-feed-card">
+              <div class="lp-feed-top">
+                <div class="lp-feed-name"><span class="lp-avatar-mini">A</span>Arjun, 2nd yr</div>
+                <span class="lp-feed-tag" style="background:rgba(148,163,184,.18); color:#cbd5e1;">Settled</span>
+              </div>
+              <p>"₹150 for printouts — repaid on time ✅"</p>
+              <button class="lp-help-btn" style="background:rgba(148,163,184,.25); color:#e2e8f0;">Closed</button>
+            </div>
+          </div>
+          <div class="floating-card d-none d-md-flex" style="top:-0.75rem; left:-0.75rem;">
+            <span class="icon-wrap"><i class="bi bi-shield-lock-fill"></i></span>
+            <div>
+              <strong>Non-custodial</strong>
+              <span>We never hold your money</span>
+            </div>
+          </div>
+          <div class="floating-card d-none d-md-flex" style="bottom:-0.75rem; right:-0.75rem; animation-delay:1.5s;">
+            <span class="icon-wrap"><i class="bi bi-mortarboard-fill"></i></span>
+            <div>
+              <strong>Student-ID verified</strong>
+              <span>Real classmates only</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Momentum strip -->
+<section class="logo-strip">
+  <div class="container">
+    <p class="text-center text-uppercase small fw-semibold mb-4" style="letter-spacing:.06em; color:#9aa4b2;">Early traction &amp; momentum</p>
+    <div class="row row-cols-2 row-cols-md-4 g-4 align-items-center">
+      <div class="col"><div class="brand-word" style="font-size:1.05rem;">CEL BITS Goa Finalist</div></div>
+      <div class="col"><div class="brand-word" style="font-size:1.05rem;">Scaler School of Technology</div></div>
+      <div class="col"><div class="brand-word" style="font-size:1.05rem;">52 Survey Respondents</div></div>
+      <div class="col"><div class="brand-word" style="font-size:1.05rem;">80.8% Would Lend</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Problem statement -->
+<section class="section-pad">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <span class="eyebrow">Problem statement</span>
+        <h2 class="mb-3">Borrowers stuck. Lenders idle.</h2>
+        <p>College students cannot borrow instantly for small needs, and idle cash earns them nothing.</p>
+        <ul class="check-list mt-4">
+          <li><i class="bi bi-check-lg"></i> No instant loans for necessities and emergencies — borrowers stuck</li>
+          <li><i class="bi bi-check-lg"></i> No place to invest spare money — lenders idle</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <div class="media-frame shadow-fluid">
+          <img src="assets/images/plant-3d.png" alt="Idle savings illustration">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section id="how-it-works" class="section-pad bg-light-fluid">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-7">
+        <span class="eyebrow">How it works</span>
+        <h2 class="mb-3">Four steps from request to ledger update</h2>
+        <p>A simple, transparent flow that keeps borrowing and lending entirely among classmates.</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card">
+          <span class="feature-num">01</span>
+          <h4 class="mb-3">The request</h4>
+          <p class="mb-0">A student posts a need — "short 300 bucks for college fest tickets, payback by Friday."</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card">
+          <span class="feature-num">02</span>
+          <h4 class="mb-3">The match</h4>
+          <p class="mb-0">Another student from the same campus views the feed and taps "help out."</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card">
+          <span class="feature-num">03</span>
+          <h4 class="mb-3">The settlement</h4>
+          <p class="mb-0">The app displays the borrower's public UPI ID or phone number. The lender pays directly via Google Pay or PhonePe.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-card">
+          <span class="feature-num">04</span>
+          <h4 class="mb-3">The ledger update</h4>
+          <p class="mb-0">Both users return to the app and tap confirm. The app logs the transaction and updates their active balance profile.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USP: Student ID -->
+<section class="section-pad">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <div class="media-frame shadow-fluid">
+          <img src="assets/images/security-lock-3d.png" alt="Student ID verification illustration">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <span class="eyebrow">Our USP</span>
+        <h2 class="mb-3">Student IDs unlock credit scoring</h2>
+        <p>Student ID login exposes academic and contact data lenders can trust. Sign-in verifies enrollment and identity instantly — giving lenders a trust signal borrowers never had before.</p>
+        <ul class="check-list mt-4">
+          <li><i class="bi bi-check-lg"></i> Instant enrollment &amp; identity verification</li>
+          <li><i class="bi bi-check-lg"></i> A trust score built from real repayment history</li>
+          <li><i class="bi bi-check-lg"></i> Only verified classmates on your feed</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Security -->
+<section id="security" class="section-pad bg-light-fluid">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-7">
+        <span class="eyebrow">What about security?</span>
+        <h2 class="mb-3">Addressing the one major concern</h2>
+        <p>We built safeguards for both sides of every transaction.</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card">
+          <span class="feature-num">01</span>
+          <h4 class="mb-3">No rate changes, ever</h4>
+          <p class="mb-0">The lender cannot increase interest after the transaction is made — Laterpay stays zero-interest by design.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card">
+          <span class="feature-num">02</span>
+          <h4 class="mb-3">Closed once paid</h4>
+          <p class="mb-0">Once the payment is done, the ledger registers it as a closed transaction.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card">
+          <span class="feature-num">03</span>
+          <h4 class="mb-3">Borrower trust score</h4>
+          <p class="mb-0">We score borrowers based on their previous transactions and display it on their profile, so lenders know if a borrower is safe.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card">
+          <span class="feature-num">04</span>
+          <h4 class="mb-3">Capped first asks</h4>
+          <p class="mb-0">First-time borrowers are limited to asks under ₹99, to safeguard lenders from defaulters.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card">
+          <span class="feature-num">05</span>
+          <h4 class="mb-3">14-day grace period</h4>
+          <p class="mb-0">If a borrower does not repay 14 days after the agreed deadline, their account is permanently terminated and a fine is registered on their name.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card">
+          <span class="feature-num">06</span>
+          <h4 class="mb-3">Non-custodial by design</h4>
+          <p class="mb-0">Laterpay never holds or transfers money — settlement happens directly between students over UPI apps they already trust.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Market -->
+<section id="market" class="section-pad">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-7">
+        <span class="eyebrow">The market</span>
+        <h2 class="mb-3">TAM, SAM, SOM</h2>
+      </div>
+    </div>
+    <div class="row g-4 text-center mb-5">
+      <div class="col-md-4">
+        <div class="stat-block lp-stat-light">
+          <h3 class="text-accent">TAM</h3>
+          <span>Every Indian college student is the overall market before filtering.</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="stat-block lp-stat-light">
+          <h3 class="text-accent">SAM</h3>
+          <span>Campuses Laterpay can realistically onboard first for pilot rollout.</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="stat-block lp-stat-light">
+          <h3 class="text-accent">SOM</h3>
+          <span>The initial pilot cohort that proves the model works.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center text-center mb-4">
+      <div class="col-lg-7">
+        <span class="eyebrow">Market validation</span>
+        <h2 class="mb-3">Demand signals from students</h2>
+      </div>
+    </div>
+    <div class="row g-4 align-items-stretch">
+      <div class="col-md-6">
+        <div class="feature-card h-100">
+          <h4 class="mb-2">80.8%</h4>
+          <p class="mb-0">of 52 students surveyed said they would lend money to students on their campus for interest.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="feature-card h-100">
+          <h4 class="mb-2">59.6%</h4>
+          <p class="mb-0">of 52 students surveyed had already lent or borrowed money among friends during their time on campus.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 mt-1">
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card">
+          <h5 class="mb-2"><i class="bi bi-graph-up-arrow text-accent me-2"></i>Proving demand</h5>
+          <p class="mb-0">Waitlist sign-ups and survey responses.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card">
+          <h5 class="mb-2"><i class="bi bi-chat-dots text-accent me-2"></i>Active discussions</h5>
+          <p class="mb-0">We have a team continuously getting feedback and modifying the idea.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card">
+          <h5 class="mb-2"><i class="bi bi-trophy text-accent me-2"></i>External feedback</h5>
+          <p class="mb-0">Shortlisted for the final round at CEL BITS Goa, and gaining attention at Scaler School of Technology.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Competition -->
+<section class="section-pad bg-light-fluid">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-7">
+        <span class="eyebrow">Competition</span>
+        <h2 class="mb-3">Community beats mpokket's direct lending</h2>
+      </div>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-5">
+        <div class="compare-card compare-win">
+          <span class="compare-badge">Laterpay — a peer network</span>
+          <ul>
+            <li><i class="bi bi-check-circle-fill"></i> Borrowing and lending stay among classmates</li>
+            <li><i class="bi bi-check-circle-fill"></i> Path to a student co-op pooling capital and data</li>
+            <li><i class="bi bi-check-circle-fill"></i> A network competitors cannot replicate overnight</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="compare-card compare-lose">
+          <span class="compare-badge">mpokket — a direct lender</span>
+          <ul>
+            <li><i class="bi bi-x-circle"></i> Charges higher interest and transaction fees</li>
+            <li><i class="bi bi-x-circle"></i> One app, no peer network behind it</li>
+            <li><i class="bi bi-x-circle"></i> Nothing stops a rival from copying the loan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Revenue -->
+<section id="revenue" class="section-pad">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-7">
+        <span class="eyebrow">Revenue model</span>
+        <h2 class="mb-3">Advertising revenue grows with users</h2>
+        <p>Revenue scales as the student base grows — without ever charging borrowers interest.</p>
+      </div>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-5 col-md-6">
+        <div class="feature-card h-100">
+          <span class="feature-num"><i class="bi bi-megaphone"></i></span>
+          <h4 class="mb-3">Advertising</h4>
+          <p class="mb-0">In-app advertising revenue grows in step with campus adoption and daily active users.</p>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6">
+        <div class="feature-card h-100">
+          <span class="feature-num"><i class="bi bi-stars"></i></span>
+          <h4 class="mb-3">In-app purchases</h4>
+          <p class="mb-0">Custom badges and profile decorations can be bought — cosmetic monetization that never touches the zero-interest ledger.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team & Roadmap -->
+<section id="team" class="section-pad bg-dark-navy">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-7">
+        <span class="eyebrow eyebrow-light">The team to win campus</span>
+        <h2 class="mb-3" style="color:#fff;">Project roadmap</h2>
+        <p style="color:rgba(255,255,255,.65);">From on-ground surveys to a full campus launch.</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-6">
+        <div class="roadmap-step">
+          <div class="roadmap-num">1</div>
+          <h6 style="color:#fff;">Surveys &amp; feedback</h6>
+          <p style="color:rgba(255,255,255,.6);">Conducting surveys and getting real feedback.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6">
+        <div class="roadmap-step">
+          <div class="roadmap-num">2</div>
+          <h6 style="color:#fff;">WhatsApp MVP</h6>
+          <p style="color:rgba(255,255,255,.6);">Building a WhatsApp community prototype as our MVP.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6">
+        <div class="roadmap-step">
+          <div class="roadmap-num">3</div>
+          <h6 style="color:#fff;">Ledger app</h6>
+          <p style="color:rgba(255,255,255,.6);">Building an informal community ledger app.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6">
+        <div class="roadmap-step">
+          <div class="roadmap-num">4</div>
+          <h6 style="color:#fff;">Launch</h6>
+          <p style="color:rgba(255,255,255,.6);">Launching the app to our pilot campuses.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 mt-4 text-center">
+      <div class="col-lg-4">
+        <i class="bi bi-mortarboard text-accent" style="font-size:1.8rem;"></i>
+        <h6 class="mt-3 mb-2" style="color:#fff;">Campus onboarding</h6>
+        <p style="color:rgba(255,255,255,.6);">Runs the on-ground push to get students signing in with their student ID.</p>
+      </div>
+      <div class="col-lg-4">
+        <i class="bi bi-graph-up text-accent" style="font-size:1.8rem;"></i>
+        <h6 class="mt-3 mb-2" style="color:#fff;">Credit scoring</h6>
+        <p style="color:rgba(255,255,255,.6);">Builds the model that turns academic and contact data into a trust score.</p>
+      </div>
+      <div class="col-lg-4">
+        <i class="bi bi-emoji-smile text-accent" style="font-size:1.8rem;"></i>
+        <h6 class="mt-3 mb-2" style="color:#fff;">A new community</h6>
+        <p style="color:rgba(255,255,255,.6);">Not just the money — it's a chance for students to make new friends.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SWOT -->
+<section class="section-pad">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-7">
+        <span class="eyebrow">SWOT analysis</span>
+        <h2 class="mb-3">A clear-eyed view of the opportunity</h2>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="swot-card swot-strengths">
+          <h4><span class="swot-icon"><i class="bi bi-shield-check"></i></span>Strengths</h4>
+          <ul>
+            <li>Non-custodial model avoids heavy financial regulation and banking licenses</li>
+            <li>Zero fees keep loans ethical, protecting students from predatory debt traps</li>
+            <li>Campus trust: a closed physical community increases social pressure to repay</li>
+            <li>Low maintenance: a simple digital ledger keeps costs very low</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="swot-card swot-weaknesses">
+          <h4><span class="swot-icon"><i class="bi bi-exclamation-triangle"></i></span>Weaknesses</h4>
+          <ul>
+            <li>High default risk — no collateral, credit checks, or legal backing</li>
+            <li>No interest or fees makes long-term self-sustainability difficult</li>
+            <li>Unpaid loans can create social friction and toxic dynamics</li>
+            <li>User turnover as students graduate every year</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="swot-card swot-opportunities">
+          <h4><span class="swot-icon"><i class="bi bi-lightbulb"></i></span>Opportunities</h4>
+          <ul>
+            <li>University partnerships as part of financial literacy programs</li>
+            <li>Value-added tools: budgeting, expense splitting, credit-building</li>
+            <li>Network growth: easy replication across universities nationwide</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="swot-card swot-threats">
+          <h4><span class="swot-icon"><i class="bi bi-flag"></i></span>Threats</h4>
+          <ul>
+            <li>Regulatory shifts could classify P2P tracking as unlicensed intermediation</li>
+            <li>Students can easily substitute mainstream payment apps or cash</li>
+            <li>A few major scam cases could damage user trust permanently</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-dark section-pad">
+  <div class="container">
+    <div class="row align-items-center position-relative">
+      <div class="col-lg-8">
+        <h2 class="mb-3">The raise and the plan</h2>
+        <p class="mb-lg-0">Over the next 12–18 months, our raise splits across product build, campus onboarding, and integration. Each milestone signals readiness for the next round. Progress is tracked live by campuses onboarded, transaction volume, and number of users.</p>
+      </div>
+      <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+        <a href="https://forms.gle/BHJaEvY9FjxCz2sE6" target="_blank" rel="noopener" class="btn btn-white-fluid btn-lg">Join the Waitlist</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-fluid">
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-lg-4">
+        <a class="navbar-brand mb-3 d-inline-flex align-items-center" href="index.html">
+          <img src="assets/images/laterpay-logo.jpeg" alt="Laterpay logo" class="lp-logo">
+        </a>
+        <p class="mt-3">Laterpay is an informal, zero-interest ledger app — students lend and borrow within their own institutions.</p>
+        <div class="d-flex gap-2 mt-4">
+          <a href="community.html" class="social-icon" aria-label="WhatsApp Community"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h6>Explore</h6>
+        <ul>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#market">The market</a></li>
+          <li><a href="#revenue">Revenue model</a></li>
+          <li><a href="#team">Team &amp; roadmap</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h6>Get involved</h6>
+        <ul>
+          <li><a href="community.html">WhatsApp Community</a></li>
+          <li><a href="https://forms.gle/BHJaEvY9FjxCz2sE6" target="_blank" rel="noopener">Join the Waitlist</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h6>Stay up to date</h6>
+        <p>Join our WhatsApp community for updates, or fill out our waitlist form to get early access.</p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="community.html" class="btn btn-whatsapp"><i class="bi bi-whatsapp me-1"></i> Join Community</a>
+          <a href="https://forms.gle/BHJaEvY9FjxCz2sE6" target="_blank" rel="noopener" class="btn btn-outline-accent">Waitlist Form</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 text-center text-md-start">
+      <p class="mb-0">&copy; <span class="currentYear"></span> Laterpay. All rights reserved.</p>
+      <p class="mb-0">HTML template by <a href="https://templatesjungle.com" target="_blank" rel="noopener" class="credit-link">TemplatesJungle</a></p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
